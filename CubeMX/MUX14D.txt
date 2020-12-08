@@ -1,0 +1,116 @@
+Configuration	MUX14D
+STM32CubeMX 	5.6.1
+Date	12/07/2020
+MCU	STM32F030C6Tx
+
+
+
+PERIPHERALS	MODES	FUNCTIONS	PINS
+SPI1	Full-Duplex Slave	SPI1_MISO	PB14
+SPI1	Full-Duplex Slave	SPI1_MOSI	PB15
+SPI1	Full-Duplex Slave	SPI1_SCK	PB13
+SPI1	Hardware NSS Input Signal	SPI1_NSS	PB12
+SYS	Serial_Wire	SYS_SWCLK	PA14
+SYS	Serial_Wire	SYS_SWDIO	PA13
+SYS	SysTick	SYS_VS_Systick	VP_SYS_VS_Systick
+USART1	Asynchronous	USART1_RX	PA10
+USART1	Asynchronous	USART1_TX	PA9
+
+
+
+Pin Nb	PINs	FUNCTIONs	LABELs
+4	PC15-OSC32_OUT	GPIO_Input	DIB_SYNC
+10	PA0	GPIO_Output	P1.0
+11	PA1	GPIO_Output	P1.1
+12	PA2	GPIO_Output	P1.2
+13	PA3	GPIO_Output	P1.3
+14	PA4	GPIO_Output	P1.4
+15	PA5	GPIO_Output	P1.5
+16	PA6	GPIO_Output	P1.6
+17	PA7	GPIO_Output	P1.7
+18	PB0	GPIO_Output	P2.0
+19	PB1	GPIO_Output	P2.1
+20	PB2	GPIO_Output	P2.2
+25	PB12	SPI1_NSS	DIB_CSA
+26	PB13	SPI1_SCK	DIB_SCLK
+27	PB14	SPI1_MISO	DIB_MISO
+28	PB15	SPI1_MOSI	DIB_MOSI
+30	PA9	USART1_TX	
+31	PA10	USART1_RX	
+33	PA12	GPIO_Output	DIB_IRQ
+34	PA13	SYS_SWDIO	
+37	PA14	SYS_SWCLK	
+38	PA15	GPIO_Output	P2_EXT
+39	PB3	GPIO_Output	P2.3
+40	PB4	GPIO_Output	P2.4
+41	PB5	GPIO_Output	P2.5
+42	PB6	GPIO_Output	P2.6
+43	PB7	GPIO_Output	P2.7
+PERIPHERALS	MODES	FUNCTIONS	PINS
+SPI1	Full-Duplex Slave	SPI1_MISO	PB14
+SPI1	Full-Duplex Slave	SPI1_MOSI	PB15
+SPI1	Full-Duplex Slave	SPI1_SCK	PB13
+SPI1	Hardware NSS Input Signal	SPI1_NSS	PB12
+SYS	Serial_Wire	SYS_SWCLK	PA14
+SYS	Serial_Wire	SYS_SWDIO	PA13
+SYS	SysTick	SYS_VS_Systick	VP_SYS_VS_Systick
+USART1	Asynchronous	USART1_RX	PA10
+USART1	Asynchronous	USART1_TX	PA9
+
+
+
+Pin Nb	PINs	FUNCTIONs	LABELs
+4	PC15-OSC32_OUT	GPIO_Input	DIB_SYNC
+10	PA0	GPIO_Output	P1.0
+11	PA1	GPIO_Output	P1.1
+12	PA2	GPIO_Output	P1.2
+13	PA3	GPIO_Output	P1.3
+14	PA4	GPIO_Output	P1.4
+15	PA5	GPIO_Output	P1.5
+16	PA6	GPIO_Output	P1.6
+17	PA7	GPIO_Output	P1.7
+18	PB0	GPIO_Output	P2.0
+19	PB1	GPIO_Output	P2.1
+20	PB2	GPIO_Output	P2.2
+25	PB12	SPI1_NSS	DIB_CSA
+26	PB13	SPI1_SCK	DIB_SCLK
+27	PB14	SPI1_MISO	DIB_MISO
+28	PB15	SPI1_MOSI	DIB_MOSI
+30	PA9	USART1_TX	
+31	PA10	USART1_RX	
+33	PA12	GPIO_Output	DIB_IRQ
+34	PA13	SYS_SWDIO	
+37	PA14	SYS_SWCLK	
+38	PA15	GPIO_Output	P2_EXT
+39	PB3	GPIO_Output	P2.3
+40	PB4	GPIO_Output	P2.4
+41	PB5	GPIO_Output	P2.5
+42	PB6	GPIO_Output	P2.6
+43	PB7	GPIO_Output	P2.7
+
+
+
+SOFTWARE PROJECT
+
+Project Settings : 
+Project Name : MUX14D
+Project Folder : /home/denis/BACKUP/EEZ/Digital control/MCU/STM32/Projects/MUX14D
+Toolchain / IDE : EWARM V8.32
+Firmware Package Name and Version : STM32Cube FW_F0 V1.11.0
+
+
+Code Generation Settings : 
+STM32Cube MCU packages and embedded software packs : Copy all used libraries into the project folder
+Generate peripheral initialization as a pair of '.c/.h' files per peripheral : No
+Backup previously generated files when re-generating : No
+Delete previously generated files when not re-generated : Yes
+Set all free pins as analog (to optimize the power consumption) : No
+
+
+Toolchains Settings : 
+Compiler Optimizations : 
+
+
+
+
+
