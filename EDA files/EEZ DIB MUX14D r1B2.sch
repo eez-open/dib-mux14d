@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.025" unitdist="inch" unit="inch" style="lines" multiple="4" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -10515,6 +10515,8 @@ reed, polarity, 2 x norm. open</description>
 <text x="7.62" y="175.26" size="1.778" layer="97">DIB connector</text>
 <text x="7.62" y="88.9" size="1.778" layer="97" rot="MR180">ADIB connectors</text>
 <wire x1="142.24" y1="91.44" x2="5.08" y2="91.44" width="0.1524" layer="97" style="shortdash"/>
+<text x="27.94" y="66.675" size="1.4224" layer="103">ADIB1_ID=002</text>
+<text x="81.28" y="66.675" size="1.4224" layer="103">ADIB2_ID=002</text>
 </plain>
 <instances>
 <instance part="KK1" gate="G$1" x="149.86" y="17.78" smashed="yes">
@@ -11586,6 +11588,28 @@ reed, polarity, 2 x norm. open</description>
 <wire x1="208.28" y1="78.74" x2="208.28" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="210.82" y1="63.5" x2="208.28" y2="66.04" width="0.1524" layer="91"/>
 <label x="207.645" y="68.58" size="1.27" layer="102" rot="R90"/>
+</segment>
+</net>
+<net name="N$1" class="0">
+<segment>
+<pinref part="X1" gate="-9" pin="1"/>
+<wire x1="30.48" y1="71.12" x2="27.94" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="71.12" x2="27.94" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="68.58" x2="58.42" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="68.58" x2="58.42" y2="71.12" width="0.1524" layer="91"/>
+<pinref part="X1" gate="-10" pin="1"/>
+<wire x1="58.42" y1="71.12" x2="55.88" y2="71.12" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$2" class="0">
+<segment>
+<pinref part="X3" gate="-9" pin="1"/>
+<wire x1="83.82" y1="71.12" x2="81.28" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="71.12" x2="81.28" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="68.58" x2="111.76" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="68.58" x2="111.76" y2="71.12" width="0.1524" layer="91"/>
+<pinref part="X3" gate="-10" pin="1"/>
+<wire x1="111.76" y1="71.12" x2="109.22" y2="71.12" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
