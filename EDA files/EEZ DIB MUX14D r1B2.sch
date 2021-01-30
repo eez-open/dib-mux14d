@@ -10666,8 +10666,11 @@ reed, polarity, 2 x norm. open</description>
 <text x="7.62" y="175.26" size="1.778" layer="97">DIB connector</text>
 <text x="7.62" y="88.9" size="1.778" layer="97" rot="MR180">ADIB connectors</text>
 <wire x1="142.24" y1="91.44" x2="5.08" y2="91.44" width="0.1524" layer="97" style="shortdash"/>
-<text x="27.94" y="66.675" size="1.4224" layer="103">ADIB1_ID=002</text>
-<text x="81.28" y="66.675" size="1.4224" layer="103">ADIB2_ID=002</text>
+<text x="27.94" y="66.675" size="1.4224" layer="103">ADIB1_ID=2</text>
+<text x="81.28" y="66.675" size="1.4224" layer="103">ADIB2_ID=2</text>
+<text x="162.56" y="109.855" size="1.27" layer="103">PCB_ID0</text>
+<text x="162.56" y="107.315" size="1.27" layer="103">PCB_ID1</text>
+<text x="144.78" y="109.855" size="1.27" layer="103">PCB_ID=2</text>
 </plain>
 <instances>
 <instance part="KK1" gate="G$1" x="149.86" y="17.78" smashed="yes">
@@ -11152,7 +11155,8 @@ reed, polarity, 2 x norm. open</description>
 <pinref part="C5" gate="G$1" pin="1"/>
 <wire x1="162.56" y1="101.6" x2="162.56" y2="99.06" width="0.1524" layer="91"/>
 <pinref part="C6" gate="G$1" pin="2"/>
-<wire x1="162.56" y1="101.6" x2="157.48" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="162.56" y1="101.6" x2="160.02" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="101.6" x2="157.48" y2="101.6" width="0.1524" layer="91"/>
 <wire x1="157.48" y1="101.6" x2="157.48" y2="99.06" width="0.1524" layer="91"/>
 <junction x="162.56" y="101.6"/>
 <pinref part="IC1" gate="G$1" pin="VSSA"/>
@@ -11162,6 +11166,10 @@ reed, polarity, 2 x norm. open</description>
 <junction x="157.48" y="101.6"/>
 <pinref part="TP1" gate="G$1" pin="P$1"/>
 <wire x1="157.48" y1="104.14" x2="157.48" y2="101.6" width="0.1524" layer="91"/>
+<pinref part="IC1" gate="G$1" pin="PF1-OSC_OUT"/>
+<wire x1="175.26" y1="106.68" x2="160.02" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="106.68" x2="160.02" y2="101.6" width="0.1524" layer="91"/>
+<junction x="160.02" y="101.6"/>
 </segment>
 <segment>
 <pinref part="C8" gate="G$1" pin="1"/>
@@ -11795,6 +11803,12 @@ reed, polarity, 2 x norm. open</description>
 <pinref part="IC1" gate="G$1" pin="PB10"/>
 <wire x1="210.82" y1="78.74" x2="210.82" y2="66.04" width="0.1524" layer="91"/>
 <label x="210.185" y="66.675" size="1.27" layer="102" rot="R90"/>
+</segment>
+</net>
+<net name="N$7" class="0">
+<segment>
+<pinref part="IC1" gate="G$1" pin="PF0-OSC_IN"/>
+<wire x1="175.26" y1="109.22" x2="162.56" y2="109.22" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
@@ -12683,6 +12697,8 @@ reed, polarity, 2 x norm. open</description>
 <text x="2.54" y="2.54" size="1.27" layer="94">Repository: https://github.com/eez-open</text>
 <text x="2.54" y="4.445" size="1.27" layer="94">More info at http://www.envox.hr/eez</text>
 <text x="164.465" y="26.67" size="2.54" layer="94" font="vector">Switch matrix relays control</text>
+<text x="83.185" y="161.29" size="1.27" layer="103">Power consumption per relay: 35 mA / 175 mW
+Max. consumption: 2.8 W</text>
 </plain>
 <instances>
 <instance part="FRAME3" gate="G$1" x="0" y="0" smashed="yes"/>
@@ -13256,4 +13272,10 @@ reed, polarity, 2 x norm. open</description>
 </errors>
 </schematic>
 </drawing>
+<compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
+</compatibility>
 </eagle>

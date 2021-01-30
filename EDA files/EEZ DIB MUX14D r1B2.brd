@@ -28,11 +28,11 @@
 <layer number="18" name="Vias" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="12" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="22" name="bPlace" color="6" fill="1" visible="no" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="26" name="bNames" color="5" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="10" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="10" fill="1" visible="no" active="yes"/>
@@ -64,6 +64,8 @@
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
 <layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
+<layer number="88" name="SimResults" color="9" fill="1" visible="yes" active="yes"/>
+<layer number="89" name="SimProbes" color="9" fill="1" visible="yes" active="yes"/>
 <layer number="90" name="Modules" color="7" fill="1" visible="no" active="no"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="no" active="no"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="no" active="no"/>
@@ -89,8 +91,11 @@
 <layer number="112" name="tSilk" color="7" fill="1" visible="no" active="no"/>
 <layer number="113" name="bTPoint" color="7" fill="1" visible="no" active="no"/>
 <layer number="114" name="Änderung" color="7" fill="1" visible="no" active="no"/>
+<layer number="115" name="CH1" color="13" fill="1" visible="yes" active="yes"/>
 <layer number="116" name="Patch_BOT" color="7" fill="1" visible="no" active="no"/>
+<layer number="117" name="CH2" color="9" fill="1" visible="yes" active="yes"/>
 <layer number="118" name="Rect_Pads" color="7" fill="1" visible="no" active="no"/>
+<layer number="119" name="CH3" color="12" fill="1" visible="yes" active="yes"/>
 <layer number="120" name="lotbs" color="7" fill="1" visible="no" active="no"/>
 <layer number="121" name="_tsilk" color="7" fill="1" visible="no" active="no"/>
 <layer number="122" name="_bsilk" color="7" fill="1" visible="no" active="no"/>
@@ -100,6 +105,8 @@
 <layer number="126" name="_bNames" color="7" fill="1" visible="no" active="no"/>
 <layer number="127" name="_tValues" color="7" fill="1" visible="no" active="no"/>
 <layer number="128" name="_bValues" color="7" fill="1" visible="no" active="no"/>
+<layer number="129" name="sram_cmd" color="13" fill="1" visible="yes" active="yes"/>
+<layer number="130" name="sram_ctrl" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="131" name="tAdjust" color="7" fill="1" visible="no" active="no"/>
 <layer number="132" name="bAdjust" color="7" fill="1" visible="no" active="no"/>
 <layer number="133" name="DNP_top" color="12" fill="1" visible="no" active="yes"/>
@@ -4974,6 +4981,10 @@ design rules under a new name.</description>
 <wire x1="50.2657" y1="17.2974" x2="49.9745" y2="17.1949" width="0.2032" layer="1"/>
 <wire x1="49.9745" y1="17.1949" x2="49.1245" y2="17.1949" width="0.2032" layer="1"/>
 <wire x1="49.1245" y1="17.1949" x2="49.0982" y2="17.2212" width="0.2032" layer="1"/>
+<contactref element="IC1" pad="6"/>
+<wire x1="112.5601" y1="16.383" x2="113.7158" y2="16.383" width="0.2032" layer="1"/>
+<wire x1="113.7158" y1="16.383" x2="113.9317" y2="16.1671" width="0.2032" layer="1"/>
+<wire x1="113.9317" y1="16.1671" x2="113.9317" y2="15.6083" width="0.2032" layer="1"/>
 </signal>
 <signal name="DIB_A0">
 <contactref element="IC3" pad="1"/>
@@ -5586,8 +5597,6 @@ design rules under a new name.</description>
 <via x="60.9727" y="8.4836" extent="1-16" drill="0.3" shape="octagon"/>
 <wire x1="60.9727" y1="8.4836" x2="60.9727" y2="11.1273" width="0.2032" layer="16"/>
 <wire x1="60.9727" y1="11.1273" x2="59.6" y2="12.5" width="0.2032" layer="16"/>
-<wire x1="103.8479" y1="17.1831" x2="99.4029" y2="12.7381" width="0.2032" layer="16"/>
-<wire x1="99.4029" y1="12.7381" x2="99.4029" y2="10.922" width="0.2032" layer="16"/>
 <wire x1="99.4029" y1="10.922" x2="97.282" y2="8.8011" width="0.2032" layer="16"/>
 <wire x1="97.282" y1="8.8011" x2="96.7359" y2="8.8011" width="0.2032" layer="16"/>
 <wire x1="96.7359" y1="8.8011" x2="94.6785" y2="6.7437" width="0.2032" layer="16"/>
@@ -5596,6 +5605,9 @@ design rules under a new name.</description>
 <wire x1="111.1631" y1="17.2339" x2="103.9241" y2="17.2339" width="0.2032" layer="1"/>
 <wire x1="103.9241" y1="17.2339" x2="103.8733" y2="17.1831" width="0.2032" layer="1"/>
 <wire x1="103.8733" y1="17.1831" x2="103.8479" y2="17.1831" width="0.2032" layer="16"/>
+<wire x1="99.4029" y1="10.922" x2="99.4029" y2="12.3571" width="0.2032" layer="16"/>
+<wire x1="99.4029" y1="12.3571" x2="103.8479" y2="16.8021" width="0.2032" layer="16"/>
+<wire x1="103.8479" y1="17.1831" x2="103.8479" y2="16.8021" width="0.2032" layer="16"/>
 </signal>
 <signal name="P2H_OUT">
 <contactref element="X4" pad="4"/>
@@ -6713,6 +6725,9 @@ design rules under a new name.</description>
 <contactref element="IC5" pad="3"/>
 <wire x1="45.6438" y1="13.2994" x2="43.9116" y2="13.2994" width="0.3048" layer="1"/>
 <wire x1="43.9116" y1="13.2994" x2="42.1742" y2="15.0368" width="0.3048" layer="1"/>
+</signal>
+<signal name="N$7">
+<contactref element="IC1" pad="5"/>
 </signal>
 </signals>
 <errors>
@@ -8940,8 +8955,8 @@ design rules under a new name.</description>
 <approved hash="19,1,5b3578cf8166f1ee"/>
 <approved hash="19,1,e66f4be095786075"/>
 <approved hash="19,1,44f6ad7226bba68d"/>
-<approved hash="19,1,697dc5cd4806eb48"/>
 <approved hash="19,1,c0816f10e145428a"/>
+<approved hash="19,1,697dc5cd4806eb48"/>
 <approved hash="19,1,258401c7bbe1ef6f"/>
 <approved hash="19,1,de81d4315a0d5ccb"/>
 <approved hash="19,1,e5bc0d2c222e92b2"/>
