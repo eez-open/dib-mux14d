@@ -5,7 +5,7 @@ The EEZ DIB MUX14D module features two 7:1 reed relay 2-wire multiplexer that ca
 
 ### Feature list
 
-* On-board STM32F030C6T6 MCU 
+* On-board STM32F030C6T6 or STM32F031C4T6 MCU 
 * 2 x 16-pin dual row 3.81 mm connectors
 * 2 x ADIB connectors (10-pin 2 mm), ADIB ID=002
 * Dual 2-wire 7:1 reed relay 2-line multiplexer 
