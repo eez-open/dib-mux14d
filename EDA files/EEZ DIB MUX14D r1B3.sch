@@ -10562,16 +10562,13 @@ reed, polarity, 2 x norm. open</description>
 <part name="IC6" library="EEZ_TI" deviceset="LM335" device="-TO92" value="LM335"/>
 <part name="R3" library="rcl" deviceset="R-EU_" device="R0805" value="1K5"/>
 <part name="SUPPLY18" library="supply2" deviceset="GND" device=""/>
-<part name="R2" library="rcl" deviceset="R-EU_" device="R0805" value="???"/>
-<part name="C8" library="rcl" deviceset="C-EU" device="C0805" value="???"/>
-<part name="SUPPLY19" library="supply2" deviceset="GND" device=""/>
 <part name="P+7" library="supply1" deviceset="+5V" device=""/>
 <part name="C12" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
 <part name="SUPPLY20" library="supply2" deviceset="GND" device=""/>
-<part name="IC5" library="EEZ_TI" deviceset="OPA376A" device="IDBVR" value="TLV9001IDBVR"/>
-<part name="R4" library="rcl" deviceset="R-EU_" device="R0805" value="30K"/>
-<part name="R5" library="rcl" deviceset="R-EU_" device="R0805" value="30K"/>
-<part name="R6" library="rcl" deviceset="R-EU_" device="R0805" value="120K"/>
+<part name="IC5" library="EEZ_TI" deviceset="OPA376A" device="IDBVR" value="MCP6001RT-I/OT"/>
+<part name="R4" library="rcl" deviceset="R-EU_" device="R0805" value="10K"/>
+<part name="R5" library="rcl" deviceset="R-EU_" device="R0805" value="10K"/>
+<part name="R6" library="rcl" deviceset="R-EU_" device="R0805" value="40K2"/>
 <part name="+3V1" library="supply1" deviceset="+3V3" device=""/>
 <part name="C14" library="rcl" deviceset="C-EU" device="C0805" value="100p"/>
 <part name="C13" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
@@ -11017,17 +11014,6 @@ reed, polarity, 2 x norm. open</description>
 <instance part="X4" gate="-10" x="109.22" y="71.12" smashed="yes">
 <attribute name="NAME" x="102.87" y="72.009" size="1.778" layer="95" rot="R180"/>
 </instance>
-<instance part="R2" gate="G$1" x="193.04" y="53.34" smashed="yes" rot="MR0">
-<attribute name="NAME" x="191.77" y="54.8386" size="1.778" layer="95"/>
-<attribute name="VALUE" x="190.5" y="50.038" size="1.778" layer="96"/>
-</instance>
-<instance part="C8" gate="G$1" x="185.42" y="45.72" smashed="yes" rot="R180">
-<attribute name="NAME" x="187.579" y="47.371" size="1.778" layer="95"/>
-<attribute name="VALUE" x="187.579" y="45.466" size="1.778" layer="96"/>
-</instance>
-<instance part="SUPPLY19" gate="GND" x="185.42" y="38.1" smashed="yes">
-<attribute name="VALUE" x="187.325" y="38.735" size="1.778" layer="96" rot="MR180"/>
-</instance>
 </instances>
 <busses>
 <bus name="PORT_A[0..6]">
@@ -11170,11 +11156,6 @@ reed, polarity, 2 x norm. open</description>
 <wire x1="175.26" y1="106.68" x2="160.02" y2="106.68" width="0.1524" layer="91"/>
 <wire x1="160.02" y1="106.68" x2="160.02" y2="101.6" width="0.1524" layer="91"/>
 <junction x="160.02" y="101.6"/>
-</segment>
-<segment>
-<pinref part="C8" gate="G$1" pin="1"/>
-<wire x1="185.42" y1="43.18" x2="185.42" y2="40.64" width="0.1524" layer="91"/>
-<pinref part="SUPPLY19" gate="GND" pin="GND"/>
 </segment>
 </net>
 <net name="DIB_A0" class="0">
@@ -11779,23 +11760,12 @@ reed, polarity, 2 x norm. open</description>
 <wire x1="111.76" y1="71.12" x2="109.22" y2="71.12" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$6" class="0">
-<segment>
-<pinref part="IC1" gate="G$1" pin="PA7"/>
-<wire x1="200.66" y1="78.74" x2="200.66" y2="53.34" width="0.1524" layer="91"/>
-<pinref part="R2" gate="G$1" pin="1"/>
-<wire x1="198.12" y1="53.34" x2="200.66" y2="53.34" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="CJ_AIN" class="0">
 <segment>
-<pinref part="R2" gate="G$1" pin="2"/>
-<pinref part="C8" gate="G$1" pin="2"/>
-<wire x1="187.96" y1="53.34" x2="185.42" y2="53.34" width="0.1524" layer="91"/>
-<wire x1="185.42" y1="53.34" x2="185.42" y2="50.8" width="0.1524" layer="91"/>
-<wire x1="185.42" y1="53.34" x2="170.18" y2="53.34" width="0.1524" layer="91"/>
-<junction x="185.42" y="53.34"/>
 <label x="170.18" y="53.975" size="1.27" layer="102"/>
+<pinref part="IC1" gate="G$1" pin="PA7"/>
+<wire x1="200.66" y1="78.74" x2="200.66" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="170.18" y1="53.34" x2="200.66" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="P1" class="0">
@@ -11814,6 +11784,7 @@ reed, polarity, 2 x norm. open</description>
 </nets>
 </sheet>
 <sheet>
+<description>Switches, Cold junction</description>
 <plain>
 <text x="2.54" y="6.35" size="1.27" layer="94">Licensed under the TAPR Open Hardware License (www.tapr.org/OHL)</text>
 <text x="2.54" y="2.54" size="1.27" layer="94">Repository: https://github.com/eez-open</text>
@@ -12692,6 +12663,7 @@ reed, polarity, 2 x norm. open</description>
 </nets>
 </sheet>
 <sheet>
+<description>Relay drivers</description>
 <plain>
 <text x="2.54" y="6.35" size="1.27" layer="94">Licensed under the TAPR Open Hardware License (www.tapr.org/OHL)</text>
 <text x="2.54" y="2.54" size="1.27" layer="94">Repository: https://github.com/eez-open</text>
