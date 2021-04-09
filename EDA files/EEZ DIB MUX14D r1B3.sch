@@ -10559,13 +10559,13 @@ reed, polarity, 2 x norm. open</description>
 <part name="ZD3" library="EEZ_Lib1" deviceset="ZENER-DIODE" device="SOD323R" value="MM3Z18VT1G"/>
 <part name="SUPPLY17" library="supply2" deviceset="GND" device=""/>
 <part name="R7" library="rcl" deviceset="R-EU_" device="R0805" value="100K"/>
-<part name="IC6" library="EEZ_TI" deviceset="LM335" device="-TO92" value="LM335"/>
+<part name="IC6" library="EEZ_TI" deviceset="LM335" device="-TO92" value="LM335AZ"/>
 <part name="R3" library="rcl" deviceset="R-EU_" device="R0805" value="1K5"/>
 <part name="SUPPLY18" library="supply2" deviceset="GND" device=""/>
 <part name="P+7" library="supply1" deviceset="+5V" device=""/>
 <part name="C12" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
 <part name="SUPPLY20" library="supply2" deviceset="GND" device=""/>
-<part name="IC5" library="EEZ_TI" deviceset="OPA376A" device="IDBVR" value="MCP6001RT-I/OT"/>
+<part name="IC5" library="EEZ_TI" deviceset="OPA376A" device="IDBVR" value="MCP6001T-I/OT"/>
 <part name="R4" library="rcl" deviceset="R-EU_" device="R0805" value="10K"/>
 <part name="R5" library="rcl" deviceset="R-EU_" device="R0805" value="10K"/>
 <part name="R6" library="rcl" deviceset="R-EU_" device="R0805" value="40K2"/>
@@ -11861,7 +11861,7 @@ reed, polarity, 2 x norm. open</description>
 <text x="222.25" y="137.16" size="1.4224" layer="101">P2L.5</text>
 <text x="222.25" y="132.08" size="1.4224" layer="101">P2L.6</text>
 <text x="222.25" y="127" size="1.4224" layer="101">P2L.7</text>
-<text x="222.25" y="124.46" size="1.4224" layer="101">P2LH</text>
+<text x="222.25" y="124.46" size="1.4224" layer="101">P2H</text>
 <text x="222.25" y="121.92" size="1.4224" layer="101">P2L</text>
 <text x="209.55" y="130.81" size="1.4224" layer="101" rot="R180">P1H.7</text>
 <text x="222.25" y="129.54" size="1.4224" layer="101">P2H.7</text>

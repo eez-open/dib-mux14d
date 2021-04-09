@@ -15,6 +15,6 @@ The EEZ DIB MUX14D module features two 7:1 reed relay 2-wire multiplexer that ca
 * I2C EEPROM for storing board specific parameters
 * Dimensions: 131 x 95 mm, 2-layer PCB
 
-### r1B2 PCB layout
+### r1B2 prototype
 
-![prototype](Images/EEZ_DIB_MUX14D_PCB_top.png)
+![prototype](Images/MUX14D_prototype_r1B2.JPG)
