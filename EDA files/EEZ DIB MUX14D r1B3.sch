@@ -11690,7 +11690,7 @@ reed, polarity, 2 x norm. open</description>
 <wire x1="208.28" y1="63.5" x2="205.74" y2="66.04" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="P2" class="0">
+<net name="P2.C" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="PB7"/>
 <wire x1="203.2" y1="154.94" x2="203.2" y2="132.08" width="0.1524" layer="91"/>
@@ -11768,7 +11768,7 @@ reed, polarity, 2 x norm. open</description>
 <wire x1="170.18" y1="53.34" x2="200.66" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="P1" class="0">
+<net name="P1.C" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="PB10"/>
 <wire x1="210.82" y1="78.74" x2="210.82" y2="66.04" width="0.1524" layer="91"/>
@@ -12055,14 +12055,14 @@ reed, polarity, 2 x norm. open</description>
 <instance part="K15" gate="2" x="149.86" y="129.54" smashed="yes" rot="R270">
 <attribute name="PART" x="147.32" y="132.08" size="1.778" layer="95"/>
 </instance>
-<instance part="K15" gate="3" x="149.86" y="55.88" smashed="yes" rot="R270">
-<attribute name="PART" x="147.32" y="58.42" size="1.778" layer="95"/>
+<instance part="K15" gate="3" x="149.86" y="63.5" smashed="yes" rot="R270">
+<attribute name="PART" x="147.32" y="66.04" size="1.778" layer="95"/>
 </instance>
 <instance part="K17" gate="2" x="149.86" y="121.92" smashed="yes" rot="R270">
 <attribute name="PART" x="147.32" y="124.46" size="1.778" layer="95"/>
 </instance>
-<instance part="K17" gate="3" x="149.86" y="63.5" smashed="yes" rot="R270">
-<attribute name="PART" x="147.32" y="66.04" size="1.778" layer="95"/>
+<instance part="K17" gate="3" x="149.86" y="55.88" smashed="yes" rot="R270">
+<attribute name="PART" x="147.32" y="58.42" size="1.778" layer="95"/>
 </instance>
 <instance part="K9" gate="2" x="78.74" y="144.78" smashed="yes" rot="R270">
 <attribute name="PART" x="76.2" y="147.32" size="1.778" layer="95"/>
@@ -12469,19 +12469,13 @@ reed, polarity, 2 x norm. open</description>
 <wire x1="160.02" y1="101.6" x2="160.02" y2="93.98" width="0.1524" layer="91"/>
 <pinref part="K2" gate="3" pin="S"/>
 <wire x1="154.94" y1="101.6" x2="160.02" y2="101.6" width="0.1524" layer="91"/>
-<pinref part="K17" gate="3" pin="S"/>
-<wire x1="154.94" y1="63.5" x2="160.02" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="160.02" y1="63.5" x2="160.02" y2="71.12" width="0.1524" layer="91"/>
 <junction x="160.02" y="71.12"/>
-<pinref part="K15" gate="3" pin="S"/>
-<wire x1="154.94" y1="55.88" x2="160.02" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="48.26" x2="160.02" y2="55.88" width="0.1524" layer="91"/>
 <wire x1="160.02" y1="55.88" x2="160.02" y2="63.5" width="0.1524" layer="91"/>
-<junction x="160.02" y="63.5"/>
+<wire x1="160.02" y1="63.5" x2="160.02" y2="71.12" width="0.1524" layer="91"/>
 <wire x1="160.02" y1="86.36" x2="175.26" y2="86.36" width="0.1524" layer="91"/>
 <pinref part="X6" gate="-8" pin="1"/>
 <wire x1="132.08" y1="48.26" x2="160.02" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="160.02" y1="48.26" x2="160.02" y2="55.88" width="0.1524" layer="91"/>
-<junction x="160.02" y="55.88"/>
 <label x="134.62" y="48.895" size="1.27" layer="102"/>
 <label x="165.1" y="86.995" size="1.27" layer="102"/>
 <wire x1="160.02" y1="101.6" x2="160.02" y2="106.68" width="0.1524" layer="91"/>
@@ -12491,6 +12485,12 @@ reed, polarity, 2 x norm. open</description>
 <wire x1="68.58" y1="106.68" x2="68.58" y2="96.52" width="0.1524" layer="91"/>
 <pinref part="K11" gate="3" pin="S"/>
 <label x="96.52" y="107.315" size="1.27" layer="102" rot="MR0"/>
+<pinref part="K15" gate="3" pin="S"/>
+<wire x1="154.94" y1="63.5" x2="160.02" y2="63.5" width="0.1524" layer="91"/>
+<junction x="160.02" y="63.5"/>
+<pinref part="K17" gate="3" pin="S"/>
+<wire x1="154.94" y1="55.88" x2="160.02" y2="55.88" width="0.1524" layer="91"/>
+<junction x="160.02" y="55.88"/>
 </segment>
 </net>
 <net name="P2H_OUT" class="0">
@@ -12550,17 +12550,17 @@ reed, polarity, 2 x norm. open</description>
 <net name="P2L.6" class="0">
 <segment>
 <pinref part="X6" gate="-4" pin="1"/>
-<pinref part="K17" gate="3" pin="P"/>
 <wire x1="132.08" y1="63.5" x2="144.78" y2="63.5" width="0.1524" layer="91"/>
 <label x="134.62" y="64.135" size="1.27" layer="102"/>
+<pinref part="K15" gate="3" pin="P"/>
 </segment>
 </net>
 <net name="P2L.7" class="0">
 <segment>
 <pinref part="X6" gate="-6" pin="1"/>
-<pinref part="K15" gate="3" pin="P"/>
 <wire x1="132.08" y1="55.88" x2="144.78" y2="55.88" width="0.1524" layer="91"/>
 <label x="134.62" y="56.515" size="1.27" layer="102"/>
+<pinref part="K17" gate="3" pin="P"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -13112,7 +13112,7 @@ Max. consumption: 2.8 W</text>
 <wire x1="22.86" y1="121.92" x2="25.4" y2="119.38" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="P1" class="0">
+<net name="P1.C" class="0">
 <segment>
 <pinref part="IC7" gate="A" pin="8B"/>
 <wire x1="25.4" y1="116.84" x2="38.1" y2="116.84" width="0.1524" layer="91"/>
@@ -13175,7 +13175,7 @@ Max. consumption: 2.8 W</text>
 <wire x1="22.86" y1="76.2" x2="25.4" y2="73.66" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="P2" class="0">
+<net name="P2.C" class="0">
 <segment>
 <pinref part="IC8" gate="A" pin="8B"/>
 <wire x1="25.4" y1="71.12" x2="38.1" y2="71.12" width="0.1524" layer="91"/>
