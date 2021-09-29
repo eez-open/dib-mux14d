@@ -18,3 +18,12 @@ The EEZ DIB MUX14D module features two 7:1 reed relay 2-wire multiplexer that ca
 ### r1B2 prototype
 
 ![prototype](Images/MUX14D_prototype_r1B2.JPG)
+
+
+
+### Firmware repository
+
+https://github.com/eez-open/dib-mux14d-fw  
+The firmware download procedure is described in [Chapter 13.2]((https://www.envox.eu/eez-bench-box-3/bb3-user-manual/13-firmware-upgrade/#bb3_man_module_upgrade)) of the User Manual.
+
+
