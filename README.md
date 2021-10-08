@@ -1,5 +1,11 @@
 ### Ownership and License
-The contributors are listed in CONTRIB.TXT. This project uses the TAPR v1.0 license, see LICENSE.TXT.
+The contributors are listed in CONTRIB.TXT.
+
+Licenses | OSHWA UID
+--|--
+![osl](Images/osl.png) | [![OSHW-HR000010](Images/OSHW_UID_HR10.svg)](https://certification.oshwa.org/hr000010.html)
+
+### Overview
 
 The EEZ DIB MUX14D module features two 7:1 reed relay 2-wire multiplexer that can be connect together to make single 14:1 multiplexer. 
 
@@ -24,6 +30,6 @@ The EEZ DIB MUX14D module features two 7:1 reed relay 2-wire multiplexer that ca
 ### Firmware repository
 
 https://github.com/eez-open/dib-mux14d-fw  
-The firmware download procedure is described in [Chapter 13.2]((https://www.envox.eu/eez-bench-box-3/bb3-user-manual/13-firmware-upgrade/#bb3_man_module_upgrade)) of the User Manual.
+The firmware download procedure is described in [Chapter 13.2]((https://www.envox.eu/eez-bench-box-3/bb3-user-manual/13-firmware-upgrade/#bb3_man_module_upgrade) of the User Manual.
 
 
