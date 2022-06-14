@@ -10522,18 +10522,18 @@ reed, polarity, 2 x norm. open</description>
 <part name="FM1" library="EEZ_Lib1" deviceset="FIDUCIAL" device="_2"/>
 <part name="X3" library="EEZ_connectors" deviceset="DS1014-10RF1B" device=""/>
 <part name="X4" library="EEZ_connectors" deviceset="DS1014-10RF1B" device=""/>
-<part name="K1" library="EEZ_switches" deviceset="RR2A" device="" value="3572.1220.051"/>
-<part name="K3" library="EEZ_switches" deviceset="RR2A" device="" value="3572.1220.051"/>
-<part name="K6" library="EEZ_switches" deviceset="RR2A" device="" value="3572.1220.051"/>
-<part name="K8" library="EEZ_switches" deviceset="RR2A" device="" value="3572.1220.051"/>
-<part name="K12" library="EEZ_switches" deviceset="RR2A" device="" value="3572.1220.051"/>
-<part name="K14" library="EEZ_switches" deviceset="RR2A" device="" value="3572.1220.051"/>
-<part name="K16" library="EEZ_switches" deviceset="RR2A" device="" value="3572.1220.051"/>
-<part name="K2" library="EEZ_switches" deviceset="RR2A" device="" value="3572.1220.051"/>
-<part name="K4" library="EEZ_switches" deviceset="RR2A" device="" value="3572.1220.051"/>
-<part name="K7" library="EEZ_switches" deviceset="RR2A" device="" value="3572.1220.051"/>
-<part name="K10" library="EEZ_switches" deviceset="RR2A" device="" value="3572.1220.051"/>
-<part name="K13" library="EEZ_switches" deviceset="RR2A" device="" value="3572.1220.051"/>
+<part name="K1" library="EEZ_switches" deviceset="RR2A" device="" value="HE721A0500"/>
+<part name="K3" library="EEZ_switches" deviceset="RR2A" device="" value="HE721A0500"/>
+<part name="K6" library="EEZ_switches" deviceset="RR2A" device="" value="HE721A0500"/>
+<part name="K8" library="EEZ_switches" deviceset="RR2A" device="" value="HE721A0500"/>
+<part name="K12" library="EEZ_switches" deviceset="RR2A" device="" value="HE721A0500"/>
+<part name="K14" library="EEZ_switches" deviceset="RR2A" device="" value="HE721A0500"/>
+<part name="K16" library="EEZ_switches" deviceset="RR2A" device="" value="HE721A0500"/>
+<part name="K2" library="EEZ_switches" deviceset="RR2A" device="" value="HE721A0500"/>
+<part name="K4" library="EEZ_switches" deviceset="RR2A" device="" value="HE721A0500"/>
+<part name="K7" library="EEZ_switches" deviceset="RR2A" device="" value="HE721A0500"/>
+<part name="K10" library="EEZ_switches" deviceset="RR2A" device="" value="HE721A0500"/>
+<part name="K13" library="EEZ_switches" deviceset="RR2A" device="" value="HE721A0500"/>
 <part name="ZD1" library="EEZ_Lib1" deviceset="ZENER-DIODE" device="SOD323R" value="MM3Z18VT1G"/>
 <part name="ZD2" library="EEZ_Lib1" deviceset="ZENER-DIODE" device="SOD323R" value="MM3Z18VT1G"/>
 <part name="IC7" library="EEZ_TI" deviceset="ULN2803A" device="DWR"/>
@@ -10542,11 +10542,11 @@ reed, polarity, 2 x norm. open</description>
 <part name="SUPPLY16" library="supply2" deviceset="GND" device=""/>
 <part name="P+6" library="supply1" deviceset="+5V" device=""/>
 <part name="P+5" library="supply1" deviceset="+5V" device=""/>
-<part name="K15" library="EEZ_switches" deviceset="RR2A" device="" value="3572.1220.051"/>
-<part name="K17" library="EEZ_switches" deviceset="RR2A" device="" value="3572.1220.051"/>
-<part name="K9" library="EEZ_switches" deviceset="RR2A" device="" value="3572.1220.051"/>
-<part name="K11" library="EEZ_switches" deviceset="RR2A" device="" value="3572.1220.051"/>
-<part name="K5" library="EEZ_switches" deviceset="RR2A" device="" value="3572.1220.051"/>
+<part name="K15" library="EEZ_switches" deviceset="RR2A" device="" value="HE721A0500"/>
+<part name="K17" library="EEZ_switches" deviceset="RR2A" device="" value="HE721A0500"/>
+<part name="K9" library="EEZ_switches" deviceset="RR2A" device="" value="HE721A0500"/>
+<part name="K11" library="EEZ_switches" deviceset="RR2A" device="" value="HE721A0500"/>
+<part name="K5" library="EEZ_switches" deviceset="RR2A" device="" value="HE721A0500"/>
 <part name="P+4" library="supply1" deviceset="+5V" device=""/>
 <part name="D1" library="EEZ_Lib1" deviceset="DIODE" device="SOD323R" value="BAS316"/>
 <part name="Q1" library="EEZ_Lib1" deviceset="2N7002" device="" value="2N7002">
